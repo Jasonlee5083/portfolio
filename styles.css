@@ -1,36 +1,197 @@
 <style>
-  body {
-      font: 400 15px/1.8 Lato, sans-serif;
-      color: #777;
-  }
-  .container {
-      padding-top: 60px;
-	  padding-bottom: 60px;
-	  
-/*	  margin-top: 10;*/
-  }
-  .carousel-inner img {
-/*      -webkit-filter: grayscale(90%);*/
-/*      filter: grayscale(90%);  make all photos black and white  */
-      width: 1200px; /* Set width to 100% */
-	  height:800px;
-      margin: auto;
-  }
-  .carousel-caption h3 {
-      color: #fff !important;
-	  
-  }
-/*
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none;  Hide the carousel text when the screen is less than 600 pixels wide 
-    }
-  }
-*/
 
-.Jason {
-/*	padding-bottom: 280px;*/
-	vertical-align: middle;
+.navbar-brand {
+	color: black;
+	font-size:50px;
+	padding-bottom:10px;
+}
+
+.test {
+	font-family: Montserrat, sans-serif;
+	margin-bottom: 0;
+	border: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: black;
+	font-size: 30px;
+    background-color:rgba(223,240,216,0.3);
+/*	background:transparent;*/
+/*	opacity: 0.6;*/
+
+
+}
+
+.container-fluid {
+	font-size: 30px;
+}
+
+#myNavbar {
+	font-family: Montserrat, sans-serif;
+	margin-bottom: 0;
+	/*      background-color: #2d2d30;*/
+	border: 0;
+	font-size: 15px;
+	/*      letter-spacing: 10px;*/
+	background-color: rgba(240, 235, 230, 0.9):
+}
+
+.container {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+@media only screen and (max-width: 800px) {
+	.home {
+		height: 400px !important;
+		background-size:contain;
+	}
+	.home-name {
+		top: 160px !important;
+		font-size: 40px !important;
+	}
+	.home-title {
+		top: 145px !important;
+		font-size: 25px !important;
+	}
+	.home-link {
+		top: 120px !important;
+		font-size: 10px !important;
+	}
+	
+}
+
+.fa {
+	color:blue;
+	filter: grayscale(90%);
+	opacity: 0.9;
+	
+
+}
+
+.fa:hover {
+	opacity: 0.4;
+
+}
+.what {
+/*	  font-family: "Paytone One";*/
+  color: #202020;
+/*  text-transform: uppercase;*/
+  letter-spacing: -2px;
+}
+
+.home-name {
+	position: relative;
+	top: 220px;
+	z-index: 1;
+	margin: auto;
+	text-align: center;
+/*	font-family: 'Raleway', sans-serif;*/
+	padding: 10px 10px;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 60px;
+	display: block;
+	margin: 11px 0 17px 0;
+	line-height: 30px;
+	text-shadow: 0 13.36px 8.896px gray, 0 -3px 1px #fff;
+	letter-spacing: -4px;
+	color:black;
+	opacity: 0.8;
+}
+
+.home-title {
+	position: relative;
+	top: 220px;
+	z-index: ;
+	margin: auto;
+	text-align: center;
+/*	font-family: 'Raleway', sans-serif;*/
+	padding: 10px 10px;
+	background-color: rgba(0, 0, 0, 0);
+	margin: 11px 0 17px 0;
+	font-size: 40px;
+	line-height: 30px;
+	color:black;
+	opacity: 0.8;
+
+	text-shadow: 0 15.36px 20.896px gray, 0 -3px 1px #fff;
+	letter-spacing: -4px;
+}
+
+body {
+	text-align: center;
+}
+
+
+
+.home-link {
+	position: relative;
+	top: 220px;
+	z-index: ;
+	margin: auto;
+	text-align: center;
+	line-height: 10px;
+/*	font-family: 'Raleway', sans-serif;*/
+	padding: 10px 10px;
+	margin: 11px 0 17px 0;
+	background-color: rgba(0, 0, 0, 0);
+	
+}
+
+.home {
+	color: black;
+	background-image: url("/img/body1.jpg");
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.6);
+	filter: grayscale(10%);
+	/* make all photos black and white */
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+	. {
+		background-size: contain;
+		height: 370px;
+		/*		width:100%;*/
+	}
+}
+
+.aboutMe, .lang, .project {
+	font-family: cursive;
+	text-align: center;
+}
+
+.aboutMeText,.p1,.p2,.p3,.p4,.p5 {
+	font-size: 16px;
+	text-align: left;
+}
+
+.project1,
+.project2,
+.project3,
+.project4,
+.projectImg {
+	text-align: center;
+	align-items: center;
+}
+
+.pImg {
+	align-items: center;
+	width:500px;
+	height: auto;
+	padding:20px;
+	position:relative;
+}
+
+	position: relative;
+	top: -20px;
+	background: url('forest.jpg') center center no-repeat;
+	background-size: cover;
+	height: 600px;
+	width: 100%;
+	/*bottom: 200px;*/
 }
 
 .name {
@@ -44,4 +205,90 @@
 }
 
 
-  </style>
+
+footer {
+	background-color: #2d2d30;
+	color: #f5f5f5;
+	padding: 32px;
+}
+
+footer a {
+	color: #f5f5f5;
+}
+
+footer a:hover {
+	color: #777;
+	text-decoration: none;
+}
+
+.skillsContainer {
+	border: 25px solid white;
+}
+
+.icon {
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+	margin: 20px 20px;
+}
+
+.mongo {
+	background: url("/logs/mongoDB.png") center center no-repeat;
+	background-size: contain;
+}
+
+.express {
+	background: url('/logs/express.png') center center no-repeat;
+	background-size: contain;
+}
+
+.angular {
+	background: url('/logs/angular2.png') center center no-repeat;
+	background-size: contain;
+}
+
+.node {
+	background: url('/logs/node.png') center center no-repeat;
+	background-size: contain;
+}
+
+.jquery {
+	background: url('jqueryicon.png') center center no-repeat;
+	background-size: contain;
+}
+
+.html {
+	background: url('/logs/html.svg') center center no-repeat;
+	background-size: contain;
+}
+
+.css {
+	background: url('/logs/css-3.svg') center center no-repeat;
+	background-size: contain;
+}
+
+.bootstrap {
+	background: url('/logs/bootstrap3.png') center center no-repeat;
+	background-size: contain;
+}
+
+
+.javascript {
+	background: url('/logs/js.png') center center no-repeat;
+	background-size: contain;
+}
+
+
+/*
+.express {
+  background: url('bnd.png') center center no-repeat;
+  background-size: contain;
+}
+
+.mongo {
+  background: url('bnd.png') center center no-repeat;
+  background-size: contain;
+}
+*/
+
+</style>

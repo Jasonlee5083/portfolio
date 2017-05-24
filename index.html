@@ -2,84 +2,89 @@
 <html lang="en">
 
 <head>
-	<!-- Theme Made By www.w3schools.com - No Copyright -->
-	<title>Jason Lee's Portfolio</title>
-	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jason Lee's Portfolio</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="styles.css" rel="stylesheet">
-
 
 </head>
 
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body id="myPage" data-target=".navbar">
 
 	<!--navbar-->
 
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
+	<nav class="navbar-default navbar-fixed-top" id="navbar2">
+		<div class="test container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-				<a class="navbar-brand" href="#myPage">PORTFOLIO</a>
+				<div class="left">
+					<a class="navbar-brand" href="#myPage">PORTFOLIO
+			
+	<!--      github linkedin-->
+<!--
+			<a target="_blank" class="navbar-brand" href='https://github.com/jasonlee5083'><i class="fa fa-github fa-2x" aria-hidden="false"></i></a>
+
+					<a target="_blank" class="navbar-brand
+	" href='https://www.linkedin.com/jsl77/'><i class="fa fa-linkedin-square fa-2x" aria-hidden="false"></i></a> -->
+
+					<!--      github linkedin-->
+					</a>
+				</div>
+
+
+
 			</div>
+
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#myPage">HOME</a></li>
 					<li><a href="#about">ABOUT</a></li>
 					<li><a href="#skill">SKILLS</a></li>
 					<li><a href="#projects">PROJECTS</a></li>
-					<li><a href="#contact">CONTACT</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<!--Home picture-->
+	<!--Home -->
 
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<!-- Indicators -->
-		<!--
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-			<li data-target="#myCarousel" data-slide-to="2"></li>
-		</ol>
--->
+	<div class="home">
+		<div class="what">
+			<div class='home-name'>Jason Lee</div>
+			<div class="home-title">Full Stack Web Developer <br></div>
 
-		<!-- Wrapper for slides -->
-		<div class="carousel-inner" role="listbox">
-			<div class="item active">
-				<img src="forest.jpg" alt="mainimg" width="1200" height="800">
-				<div class="carousel-caption">
-					<div class="Jason">
-						<p class="name">Jason Lee</p>
-						<p class="jobtitle">Full Stack Developer</p>
-					</div>
-
-				</div>
-			</div>
 		</div>
+		<div class='home-link'>
+
+			<a target="_blank" class="" href='https://github.com/jasonlee5083'>
+				<i class="fa fa-github fa-4x"></i></a>
+
+			<a target="_blank" class="
+	" href='https://www.linkedin.com/in/jsl77/'><i class="fa fa-linkedin-square fa-4x"></i></a>
+		</div>
+
+
 	</div>
 
-	<!-- Container (The Band Section) -->
-	<div id="about" class="container text-center">
-		<h3>ABOUT</h3>
+
+	<!--about -->
+	<div id="about" class="container">
+		<h3 class="aboutMe">ABOUT</h3>
 		<hr>
-		<p>I am full stack web developer. I enjoy Javascript MEAN stack(MongoDB, Express, AngularJS, NodeJS) technologies and anxious to learn new things. Enthusiasm for technology and creative thinking is important key to me as a web developer. I like to play tennis with friends and neighbors and also I love traveling with my family. Please visit my Github and linkedin for details
+		<p class="aboutMeText">I am a full stack web developer who enjoys working in the Javascript MEAN stack (MongoDB, Express, AngularJS, NodeJS) technologies and am anxious to learn new things. My enthusiasm for technology and creative thinking are important to me and I think they are part of what makes me a great developer. I also enjoy playing tennis with friends and love traveling with my family. Please visit my Github and Linkedin to learn more about me and my work
 		</p>
 		<br>
 		<div class="row">
-			<div class="col-sm-6">
+			<div class="col-sm-6 text-center">
 				<p class="text-center"><strong>Education (clik the image)</strong></p>
-
 				<a href="#demo1" data-toggle="collapse">
-					<img src="vschool2.png" class="img-circle person" alt="Random Name" width="80" height="80">
+					<img src="vschool2.png" class="img1-circle person" width="80" height="80">
 				</a>
 				<hr>
 
@@ -90,7 +95,7 @@
 				</div>
 				<br>
 				<a href="#demo2" data-toggle="collapse">
-					<img src="byu.png" class="img-circle person" alt="Random Name" width="80" height="80">
+					<img src="byu.png" class="img-circle person" width="80" height="80">
 				</a>
 				<hr>
 				<div id="demo2" class="collapse">
@@ -99,11 +104,11 @@
 				</div>
 
 			</div>
-			<div class="col-sm-6">
+			<div class="col-sm-6 text-center">
 				<p class="text-center"><strong>Work experiences (click the image)</strong></p>
 
 				<a href="#demo3" data-toggle="collapse">
-					<img src="bnd.png" class="img-circle person" alt="Random Name" width="120" height="80">
+					<img src="bnd.png" class="img-circle person" width="120" height="80">
 				</a>
 				<hr>
 				<div id="demo3" class="collapse">
@@ -114,57 +119,229 @@
 				</div>
 				<br>
 				<a href="#demo4" data-toggle="collapse">
-					<img src="byu.png" class="img-circle person" alt="Random Name" width="80" height="80">
+					<img src="byu.png" class="img-circle person" width="80" height="80">
 				</a>
 				<hr>
 				<div id="demo4" class="collapse">
 					<p>Brigham Young University</p>
 					<p>Research Assistant (2010~2011)</p>
 				</div>
-				<!--
-				<a href="#demo3" data-toggle="collapse">
-					<img src="rain.jpg" class="img-circle person" alt="Random Name" width="80" height="80">
-				</a>
-				<div id="demo3" class="collapse">
 
-				</div>
-				<hr>
-				<a href="#demo4" data-toggle="collapse">
-					<img src="rain.jpg" class="img-circle person" alt="Random Name" width="80" height="80">
-				</a>
-				<hr>
-				<div id="demo4" class="collapse">
-
-				</div>
--->
 			</div>
 
 		</div>
 	</div>
 
 	<div id="skill" class="container text-center">
-	<h3>SKILLS</h3>
-
-		<br>
 		<div class="row">
 			<div class="col-sm-12">
-				<img src="rain.jpg" alt="mainimg" width="700" height="500">
+				<h3 class="lang">SKILLS</h3>
+				<hr class='subhr'>
 			</div>
 		</div>
+		<div class="row skillsContainer">
+			<div class="col-xs-4 col-sm-3">
+				<div class='icon mongo'></div>
+			</div>
+			<div class="col-xs-4 col-sm-3">
+				<div class='icon express'></div>
+			</div>
+			<div class="col-xs-4 col-sm-3">
+				<div class='icon angular'></div>
+			</div>
+			<div class="col-xs-4 col-sm-3">
+				<div class='icon node'></div>
+			</div>
+			<div class="col-xs-4 col-sm-3">
+				<div class='icon javascript'></div>
+			</div>
+			<div class="col-xs-4 col-sm-3">
+				<div class='icon html'></div>
+			</div>
+			<div class="col-xs-4 col-sm-3">
+				<div class='icon css'></div>
+			</div>
+			<div class="col-xs-4 col-sm-3">
+				<div class='icon bootstrap'></div>
+			</div>
+			<div class="col-xs-4 col-sm-3">
+				<div class='icon jquery'></div>
+			</div>
+		</div>
+
 	</div>
 
-	<div id="projects" class="container text-center">
-		<h3>PROJECTS</h3>
+	<div id="projects" class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3 class="project text-center">PROJECTS</h3>
+				<hr class='subhr'>
+			</div>
+		</div>
 
-		<br>
-		
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="project1"><a target="_blank" href="http://mymap.jasonlee.online">Weather/Map API</a></h2>
+				<hr>
+				<ul class="p1">
+					<li>Angular application with Weather/GoogleMap API </li>
+					<li>This web-site provides GEO/Weather information and generates a map image from the Address or Zip Code</li>
+					<li>Skills :AngularJS, Bootstrap,HTML5,CSS, Weather/Google Map API, Angular Google Map directive</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="projectImgs">
+
+			<div class="row">
+
+				<div class="col-xs-12  col-sm-12 col-md-6">
+					<a data-toggle="" data-target="" class="">
+						<img class=pImg src="/img/myMap1.png" alt="">
+					</a>
 				</div>
 
-			
+				<div class="col-xs-12  col-sm-12 col-md-6">
+					<a data-toggle="" data-target="" class="">
+						<img class=pImg src="/img/myMap2.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
 
-		
-	
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="project2"><a target="_blank" href="http://myvote.jasonlee.online">Rock the Vote</a></h2>
+				<hr>
+				<ul class="p2">
+					<li>Full Stack application using Angular front-and Node/Express, MongoDB back-end</li>
+					<li>Users can add new issues to be voted on, post comments and vote on issues (upvotes/downvotes). App auto-orders issues by upvotes score.</li>
+					<li>Skills: AngularJS, HTML5, CSS, Bootstrap, NodeJS, Express, MongoDB</li>
+				</ul>
 
+			</div>
+		</div>
+		<div class="projectImg">
+
+			<div class="row">
+
+				<div class="col-xs-12  col-sm-12 col-md-6">
+					<a data-toggle="" data-target="" class="">
+						<img class=pImg src="/img/myVote1.png" alt="">
+					</a>
+				</div>
+
+				<div class="col-xs-12  col-sm-12 col-md-6">
+					<a data-toggle="" data-target="" class="">
+						<img class=pImg src="/img/myVote2.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+<!--
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="project3"><a target="_blank" href="http://mycalendar.jasonlee.online">My Calendar</a></h2>
+				<hr>
+				<ul class='p3'>
+					<li>MEAN stack application</li>
+					<li>Angular Material Calendar Framework was injected to allow users to add events to their calendars.</li>
+					<li>Skills: AngularJS, HTML5, CSS, Bootstrap, API, NodeJS, Express, MongoDB, Angular Material Calendar directive</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="projectImg">
+			<div class="row">
+
+				<div class="col-xs-12  col-sm-12 col-md-6">
+					<a data-toggle="" data-target="" class="">
+						<img class=pImg src="/img/myCal1.png" alt="">
+					</a>
+				</div>
+
+				<div class="col-xs-12  col-sm-12 col-md-6">
+					<a data-toggle="" data-target="" class="">
+						<img class=pImg src="/img/myCal2.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+-->
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="project4"><a target="_blank" href="http://myevents.jasonlee.online">My Event lists</a></h2>
+				<hr>
+				<ul class='p4'>
+					<li>MEAN stack application with user authentication</li>
+					<li>Angular Material Calendar Framework was injected to allow users to add events to their calendars.</li>
+					<li>User can Signup/Login to their specific calendar. Calendar also generates a Googlemap image and marker when user inputs a location for an event</li>
+					<li>Skills: AngularJS, HTML5, CSS, Bootstrap, API, NodeJS, Express, MongoDB, Angular Material Calendar directive, Google Map API, Angular Google Map directive</li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="projectImg">
+				<div class="row">
+
+				<div class="col-xs-12  col-sm-12 col-md-6">
+					<a data-toggle="" data-target="" class="">
+						<img class=pImg src="/img/myEvent1.png" alt="">
+					</a>
+				</div>
+
+				<div class="col-xs-12  col-sm-12 col-md-6">
+					<a data-toggle="" data-target="" class="">
+						<img class=pImg src="/img/myEvent2.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="project4"><a target="_blank" href="http://appmedown.jasonlee.online">App Me Down</a></h2>
+				<hr>
+				<ul class='p5'>
+					<li>MEAN stack application with user authentication and web admin function</li>
+					<li>Users can post and trade used items. User can search items by category and contact other users for the exchange.</li>
+					<li>Skills: AngularJS, HTML5, CSS, Bootstrap, API, NodeJS, Express, MongoDB </li>
+				</ul>
+
+			</div>
+		</div>
+		<div class="projectImg">
+						<div class="row">
+
+				<div class="col-xs-12  col-sm-12 col-md-6">
+					<a data-toggle="" data-target="" class="">
+						<img class=pImg src="/img/appAdd.png" alt="">
+					</a>
+				</div>
+
+				<div class="col-xs-12  col-sm-12 col-md-6">
+					<a data-toggle="" data-target="" class="">
+						<img class=pImg src="/img/appItem2.png" alt="">
+					</a>
+				</div>
+			</div>
+						<div class="row">
+
+				<div class="col-xs-12  col-sm-12 col-md-6">
+					<a data-toggle="" data-target="" class="">
+						<img class=pImg src="/img/appProfile2.png" alt="">
+					</a>
+				</div>
+
+				<div class="col-xs-12  col-sm-12 col-md-6">
+					<a data-toggle="" data-target="" class="">
+						<img class=pImg src="/img/appSearch2.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
