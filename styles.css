@@ -253,7 +253,7 @@ footer a:hover {
 }
 
 .jquery {
-	background: url('jqueryicon.png') center center no-repeat;
+	background: url('/logs/jQuery.png') center center no-repeat;
 	background-size: contain;
 }
 
@@ -278,17 +278,5 @@ footer a:hover {
 	background-size: contain;
 }
 
-
-/*
-.express {
-  background: url('bnd.png') center center no-repeat;
-  background-size: contain;
-}
-
-.mongo {
-  background: url('bnd.png') center center no-repeat;
-  background-size: contain;
-}
-*/
 
 </style>
